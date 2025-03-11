@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castaway</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="heading_container">
+            <h1 class="heading_text">Castaway</h1>
+
+            <nav>
+                <ul class="heading_list">
+                    <li class="heading_item" style="color: #118DA8; text-decoration: underline;">Home</li>
+                    <li class="heading_item">Episodes</li>
+                    <li class="heading_item">About</li>
+                    <li class="heading_item" style="margin-right: 0;">Contact</li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_title_container">
+            <img src="img/Frame.png" alt="" class="main_title_img">
+
+            <div class="title_text_container">
+                <p class="title_text">Take your <br> <span class="test">podcast to the <img src="img/line.png" alt=""
+                            class="title_line_img"></span> <br> <span class="title_medium"> next</span> <strong
+                        class="title_strong_text">level</strong></p>
+
+                <div class="title_listen_container">
+                    <span class="listen_text" style="display: block;">Listen on</span>
+                    <img src="img/internet.png" alt="" class="listen_img">
+                </div>
+            </div>
+        </div>
+
+        <div class="main_episodes_container">
+            <div class="episodes_header">
+                <h2 class="episodes_text">Latest episodes</h2>
+                <button class="episodes_button">View all episodes</button>
+            </div>
+
+            <div class="episode" style="margin-top: 0;">
+                <img src="img/episode1.png" alt="" class="episode_photo">
+                <div class="episode_description">
+                    <span class="episode_function">Gear</span>
+                    <span class="episode_number">Episode <span class="episode_strong_number">3</span></span>
+
+                    <p class="episode_title">Should you get <br> outboard audio gear?</p>
+                    <p class="episode_title_descripion">Is hardware really worth it when it comes to podcasting? The
+                        answer is...it depends. Here’s our reasons on why you might want to consider picking something
+                        up.</p>
+
+                    <button class="episodes_button" style="font-size: 18px;" id="episode_button">View Episode
+                        Details</button>
+                </div>
+            </div>
+
+            <div class="episode">
+                <img src="img/episode2.png" alt="" class="episode_photo">
+                <div class="episode_description">
+                    <span class="episode_function">Tips & Tricks</span>
+                    <span class="episode_number">Episode <span class="episode_strong_number">2</span></span>
+
+                    <p class="episode_title">Mic tricks to take <br> you to the next level</p>
+                    <p class="episode_title_descripion">Stop rolling with those default settings on your mic. These
+                        small tweaks will take you from sounding good to great.</p>
+
+                    <button class="episodes_button" style="font-size: 18px;" id="episode_button">View Episode
+                        Details</button>
+                </div>
+            </div>
+
+            <div class="episode">
+                <img src="img/episode3.png" alt="" class="episode_photo">
+                <div class="episode_description">
+                    <span class="episode_function">Gear</span>
+                    <span class="episode_number">Episode <span class="episode_strong_number">1</span></span>
+
+                    <p class="episode_title">The best microphone <br>under $200</p>
+                    <p class="episode_title_descripion">With so many microphones on the market, how are you supposed to
+                        know what’s the best? Take a look at our top picks.</p>
+
+                    <button class="episodes_button" style="font-size: 18px;" id="episode_button">View Episode
+                        Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_jacob_container">
+            <div class="jacob_text_container">
+                <img src="img/arrow.png" alt="" class="arrow_img">
+                <span class="jacob_meet" style="display: block;">Meet your host</span>
+                <span class="jacob_name" style="display: block;">Jacob Paulaner</span>
+                <span class="jacob_text" style="display: block;" id="jacob_text1">Jacob has a background in audio engineering, and has <br>
+                    been podcasting since the early days.</span>
+                <span class="jacob_text" style="display: block;" id="jacob_text2">He’s here to help you level up your game by sharing <br> everything he’s learned along the way.</span>
+            </div>
+            <img src="img/jacob_photo.png" alt="" class="jacob_photo">
+        </div>
+
+        <div class="main_form">
+            <div class="form">
+                <div class="form_start">
+                    <span class="form_title" style="display: block;">Email Newsletter</span>
+                    <span class="form_description" style="display: block;">Subscribe <br> for updates</span>
+                </div>
+                <form action="#">
+                    <input type="text" name="name" class="form_input" id="name" placeholder="Name"><br>
+                    <input type="email" name="email" class="form_input" id="email" placeholder="Email"><br>
+                    <button type="submit" class="form_button">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div class="reviews_line1">
+                <div class="review">
+                    <div class="review_stars">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                    </div>
+
+                    <div class="review_text">I can’t recommend <br> this podcast <br>enough</div>
+
+                    <div class="review_author">Betty Lacey</div>
+                </div>
+
+                <div class="review">
+                    <div class="review_stars">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                    </div>
+
+                    <div class="review_text">Jacob is the best <br> in the business</div>
+
+                    <div class="review_author">Adam Driver</div>
+                </div>
+
+                <div class="review" class="review_last">
+                    <div class="review_stars">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                    </div>
+
+                    <div class="review_text">A wealth of audio <br>knowledge</div>
+
+                    <div class="review_author">Marcus Brown</div>
+                </div>
+            </div>
+
+            <div class="reviews_line2">
+                <div class="review">
+                    <div class="review_stars">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                    </div>
+
+                    <div class="review_text">Every episode is a <br> gem!</div>
+
+                    <div class="review_author">Jessica Knowl</div>
+                </div>
+
+                <div class="review">
+                    <div class="review_stars">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                    </div>
+
+                    <div class="review_text">Whoa whoa, let me <br>take some notes!</div>
+
+                    <div class="review_author">Scott Adams</div>
+                </div>
+                
+                <div class="review">
+                    <div class="review_stars" class="review_last">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                        <img src="img/star.png" alt="" style="display: inline;">
+                    </div>
+
+                    <div class="review_text">I’ve upped my <br> game considerably <br> since I started <br>listening</div>
+
+                    <div class="review_author">Steven Blast</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_title">
+                <h1 class="footer_text">Castaway</h1>
+                <img src="img/footer.png" alt="" class="footer_links1">
+            </div>
+            <ul class="footer_list">
+                <li class="footer_item">Home</li>
+                <li class="footer_item">About</li>
+                <li class="footer_item">Episodes</li>
+                <li class="footer_item" style="margin-bottom: 0;">Contact</li>
+            </ul>
+            <ul class="footer_list">
+                <li class="footer_item">Style Guide</li>
+                <li class="footer_item">Instructions</li>
+                <li class="footer_item">Changelog</li>
+                <li class="footer_item">Credit</li>
+                <li class="footer_item">Powered by Webflow</li>
+                <li class="footer_item">Licenses</li>
+            </ul>
+            <img src="img/internet.png" alt="" class="footer_listen_img">
+        </div>
+    </footer>
+</body>
+
+</html>

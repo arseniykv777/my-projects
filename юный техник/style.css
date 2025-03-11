@@ -1,0 +1,294 @@
+* {
+    font-family: 'Jost';
+}
+
+.heading_text, .footer_text {
+    color: #000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.heading_container {
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,82,78,1) 0%, rgba(44,138,214,1) 2%, rgba(24,51,56,1) 100%);
+    background-size: 400% 400%; /* Увеличиваем размер градиента для анимации */
+    animation: gradientAnimation 15s ease infinite; /* Анимация градиента */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.heading_list {
+    display: flex;
+}
+
+.heading_item {
+    margin-right: 38px;
+    list-style: none;
+}
+
+.heading_link, .footer_link, .footer_link_contact {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.heading_button {
+    border-radius: 10px;
+    background-color: #8C9FE3;
+    padding: 7px;
+}
+
+.heading_text_link, .footer_text_link {
+    color: #000;
+}
+
+.heading_link_button {
+    color: #000;
+    font-size: 23px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading_link:hover, .footer_link:hover {
+    text-decoration: underline;
+}
+
+
+
+.heading_img_container {
+    padding-top: 173px;
+    text-align: center;
+}
+
+.main_title_container {
+    z-index: 1;
+    position: relative;
+    margin-top: 86px;
+    text-align: center;
+}
+
+.main_text {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.malen_text {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.cards {
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    text-align: center;
+    border: rgba(118, 118, 118, 0.5) 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+    width: 360px;
+    height: 400px;
+}
+
+.card_img {
+    margin-top: 30px;
+}
+
+.card_title {
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.card_description {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #636363;
+
+}
+
+.card_price {
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+.card_price_text1 {
+    margin-right: 19px;
+    font-weight: 600;
+    color: #3E68FF;
+}
+
+.card_price_text2 {
+    font-weight: 300;
+    color: #282828;
+}
+
+.card_button {
+    color: #FFF;
+    font-size: 21px;
+    background-color: #9EB4FF;
+    border: #FFF;
+    border-radius: 10px;
+    width: 210px;
+    height: 35px;
+}
+
+.card_button_container {
+    margin-top: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.otziv {
+    text-align: center;
+    margin-top: 86px;
+}
+
+.otziv_text {
+    width: 1015px;
+
+}
+
+.otziv_main_text {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.otziv_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.link_strelka:hover {
+    cursor: pointer;
+}
+
+.otziv_title, .form_title, .goodbye_title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.otziv_name {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.otziv_description {
+    font-size: 20px;
+    color: #545454;
+}
+
+.form {
+    text-align: center;
+    margin-top: 86px;
+}
+
+form {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border: rgba(118, 118, 118, 0.5) 1px solid;
+    border-radius: 50px;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    padding-top: 27px;
+
+}
+
+.form_input {
+    font-weight: 300;
+    width: 585px;
+    height: 64px;
+    font-size: 28px;
+    border-radius: 30px;
+    border: #BABABA 1px solid;
+    margin-bottom: 26px;
+    padding-left: 30px;
+}
+
+.form_button {
+    width: 210px;
+    height: 35px;
+    border-radius: 10px;
+    border: #FFF;
+    background-color: #9EB4FF;
+    color: #FFF;
+    font-size: 21px;
+    margin-top: 19px;
+}
+
+.form_description, .goobye_description {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.form_title, .goodbye_title {
+    margin-bottom: 7px;
+}
+
+.goodbye {
+    text-align: center;
+    margin-top: 86px;
+}
+
+.yandexcart {
+    margin-top: 57px;
+    margin-bottom: 10px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_item {
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+
+.footer_link_contact {
+    color: #3E68FF;
+    font-weight: 400
+}
+
+.footer_link_contact:hover {
+    cursor: text;
+}
+
+.main_title_container:before, .otziv:before, .form:before, .goodbye:before {
+    display: block;
+    content: '';
+    height: 87.5px;
+    margin-top: -87.5px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

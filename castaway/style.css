@@ -1,0 +1,345 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #191919;
+}
+
+.heading_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading_text, .footer_text {
+    color: #FFF;
+}
+
+.heading_list {
+    list-style: none;
+    display: flex;
+}
+
+.heading_item, .footer_item {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.heading_item:hover, .heading_text:hover {
+    cursor: pointer;
+}
+
+.heading_item:hover {
+    color: #118DA8;
+}
+
+.main_title_img {
+    width: 650px;
+    height: auto;
+    margin-right: 60px;
+}
+
+.main_title_container {
+    margin-left: -24px;
+    display: flex;
+    align-items: center;
+
+}
+
+.title_text {
+    font-size: 70px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.title_medium {
+    font-size: 75px;
+}
+
+.title_strong_text {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.test {
+    position: relative;
+
+}
+
+.title_line_img {
+    height: auto;
+    width: 130px;
+    position: absolute;
+    display: block;
+    top: 115px;
+}
+
+.listen_img {
+    margin-top: 16px;
+}
+
+.listen_text {
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.episodes_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.episodes_text {
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF;
+}
+
+.episodes_button, .form_button {
+    background-color: #118DA8;
+    color: #FFF;
+    padding: 12px 15px 12px 20px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 0.9;
+}
+
+
+main, footer {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.episode {
+    padding: 40px;
+    display: flex;
+    background-color: #000;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+
+.episode_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 53px;
+    max-height: 465px;
+    max-width: 778px;
+}
+
+.episode_function {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 5px;
+    font: 18px;
+    font-weight: 400;
+    color: #FFF;
+    width: max-content;
+    display: inline-block;
+    background-color: #191919;
+}
+
+.episode_number {
+    font-weight: 400;
+    font-size: 17px;
+    display: block;
+    color: #118DA8;
+}
+
+.episode_strong_number {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.episode_title {
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF;
+    margin: 0;
+}
+
+.episode_title_descripion {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFF;
+    opacity: 0.7;
+}
+
+.episode_photo {
+    border-radius: 10px;
+}
+
+#episode_button {
+    width: max-content;
+}
+
+.main_jacob_container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.jacob_meet {
+    margin-top: 20px;
+    color: #118DA8;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.jacob_name {
+    margin-top: 25px;
+    font-size: 65px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.jacob_text {
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFF;
+    opacity: 0.7;
+}
+
+#jacob_text1 {
+    margin-top: 28px;
+}
+
+#jacob_text2 {
+    margin-top: 33px;
+}
+
+.jacob_text_container {
+
+    margin-right: 94px;
+}
+
+.main_form {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form {
+    background-color: #000;
+    border-radius: 30px;
+    display: flex;
+    padding: 60px;
+    justify-content: space-between;
+}
+
+.form_title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #118DA8;
+}
+
+.form_description {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.form_input {
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    padding: 20px;
+    width: 522px;
+    border: #7FFF00 1px solid;
+    border-radius: 6px;
+    background-color: #191919;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFF;
+    opacity: 0.7;
+    transition: border-color 0.5s;
+}
+
+.form_input:placeholder-shown {
+    border-color: #BABABA;
+}
+
+.form_button {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.review {
+    border-radius: 30px;
+    background-color: #000;
+    padding: 50px;
+    width: 423px;
+}
+
+.review_text {
+    font-size: 36px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.review_author {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF;
+    opacity: 0.7;
+}
+
+.reviews_line1, .reviews_line2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review_last {
+    margin-right: 0;
+}
+
+.reviews_line2 {
+    margin-top: 15px;
+}
+
+.footer_container {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.footer_list {
+    list-style: none;
+}
+
+.footer_listen_img {
+    width: 245px;
+    height: 32px;
+}
+
+.footer_item {
+    margin-bottom: 10px;
+}

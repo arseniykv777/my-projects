@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kenia&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.desktop1 {
+    background-image: url(img/Звездное\ небо.jfif);
+    padding-top: 50px;
+    height: 1024px;
+}
+
+.header {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-nav_cont {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav_list {
+    display: flex;
+    margin-left: 15%;
+    gap: 100px;
+}
+
+.header_link {
+    color: rgb(255, 255, 255);
+    font-family: Istok Web;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+.header-main_cont {
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    color: rgb(255, 255, 255);
+    font-family: Kenia;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: 0%;
+}
+
+
+.header-text {
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: Istok Web;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+}
+
+
+
+.header-main_cable {
+    position: absolute;
+    top: 735px;
+    z-index: 1;
+    left: 45px;
+    display: block;
+}
+
+.header-main_photo {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.header-main_screen {
+    left: 50px;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 2;
+    display: block;
+}
+
+.header-main_iphone {
+    position: relative;
+    display: block;
+    z-index: 3;
+}
+
+.desktop2-header {
+    background: rgb(213, 48, 5);
+    padding-left: 10vw;
+}
+
+.desktop{
+    padding-top: 83px;
+    height: 1024px;
+}
+
+.desktop-title {
+    color: rgb(255, 255, 255);
+    font-family: Karla;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0%;
+}
+
+.desktop2-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop2-button {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: -4px -4px 30px 0px rgba(255, 255, 255, 0.1),4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(2087.07% 134.42% at 2% 8%,rgb(177, 62, 24),rgb(243, 80, 26) 100%)/* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */;
+    width: 382px;
+    height: 83px;
+}
+
+.desktop2-button_link {
+    color: rgb(255, 255, 255);
+    font-family: Karla;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0%;
+}
+
+.desktop2-button_link:hover, .desktop4-button_link:hover{
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#desktop3 {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.desktop3-header {
+    background: linear-gradient(180.00deg, rgb(213, 48, 5),rgb(0, 0, 0) 6.037%);
+}
+
+.desktop3-text {
+    color: rgb(255, 255, 255);
+    font-family: Karla;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0%;
+    margin: auto;
+}
+
+.desktop4-header {
+    background: rgb(213, 48, 5);
+}
+
+
+
+.desktop4-main {
+    display: flex;
+}
+
+.desktop4-button {
+    border-radius: 30px;
+    box-shadow: -4px -4px 4px 0px rgba(255, 255, 255, 0.1),4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(2, 2, 2, 0.9);
+    border: none;
+    padding: 10px 0px;
+    width: 240px;
+}
+
+.desktop4-button_link {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+#but2 {
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    box-shadow: -4px -4px 4px 0px rgba(255, 255, 255, 0.1),4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(227, 227, 227);
+}
+
+#but2_link {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.desktop4-button2 {
+    margin-top: 50px;
+}
+
+.desktop4-text_title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0%;
+    white-space: nowrap;
+    margin-bottom: 17px;
+}
+
+#desktop4-title, .desktop4-main_buttons {
+    margin-left: 10vw;
+}
+
+
+.desktop4-main_photo {
+    margin-left: auto;
+}
+
+.desktop4-text, .desktop4-span {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    white-space: nowrap;
+}
+
+.desktop4-span {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.desktop4-main_text {
+    text-align: center;
+    margin-left: 10vw;
+}
+
+.desktop4-main_text_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background: linear-gradient(180.00deg, rgb(213, 48, 5),rgb(0, 0, 0) 4.015%);
+    padding: 120px 10vw 77px 10vw;
+}
+
+.footer_lists {
+    display: flex;
+    gap: 150px;
+    justify-content: right;
+}
+
+.footer-item_title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1px;
+    letter-spacing: 0%;
+}
+
+.footer-link {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0%;
+}
+
+.footer-item, .footer-item_title {
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-family: Kenia;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer-list2 {
+    display: flex;
+    gap: 100px;
+}
+
+#footer-title_list {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+
+.footer-byebye {
+    margin-top: 77px;
+}

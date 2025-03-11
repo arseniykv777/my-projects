@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+} 
+
+html {
+    box-sizing: border-box;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modal3.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content3 {
+    background-color: #fefefe;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    width: 700px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(46,46,46,1) 100%, rgba(44,138,214,1) 100%);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal3.show .modal-content3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal3-input {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    letter-spacing: 0px;
+    text-align: left;
+    outline: none;
+    border: none;
+    width: 95%;
+    background: transparent;
+    padding: 0px 5px;
+}
+
+.close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.add_scroll {
+    overflow: auto
+}
