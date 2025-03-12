@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ruda:wght@400..900&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(36, 36, 39);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.3s; 
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+li {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+button {
+    transform: scale(1);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 100px;
+}
+
+.header-nav img {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.header-nav img:hover {
+    transform: scale(1.1);
+}
+
+.header-nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    
+}
+
+.nav-item {
+    z-index: 1;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header-main-h3 {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-main-title {
+    background: linear-gradient(143.50deg, rgb(0, 58, 206),rgb(206, 0, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #FFF;
+}
+
+.header-main-btn {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    background: linear-gradient(135.00deg, rgb(83, 73, 143) 0%,rgb(217, 85, 131) 100%);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.header-main-img-cont {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    z-index: 0;
+}
+
+.header-main-year {
+    position: absolute;
+    color: rgba(132, 132, 132, 0.5);
+    font-family: Roboto;
+    font-size: 490px;
+    font-weight: 250;
+    line-height: 574px;
+    letter-spacing: 0%;
+    text-align: left;
+    left: 80%;
+}
+
+.main {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(36, 36, 39);
+    width: 70vw;
+}
+
+.main img {
+    cursor: pointer;
+}
+
+.main-text-cont {
+    width: 55vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-text {
+    font-family: Ruda;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.main-span {
+    color: rgb(255, 0, 0);
+}
+
+.main-footer-img-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+    width: 55vw;
+    margin: 0 auto;
+}
+
+.main img {
+    border-radius: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer-title {
+    background: linear-gradient(170.45deg, rgb(0, 58, 206),rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Ruda;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 123px;
+    margin-bottom: 62px;
+}
+
+.footer {
+    background: rgb(36,36,39);
+    background: linear-gradient(180deg, rgba(36,36,39,1) 0%, rgba(103,103,103,1) 100%);
+    padding-top: 120px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-text {
+    color: rgb(255, 255, 255);
+    font-family: Ruda;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer-list {
+    display: flex;
+    gap: 45px;
+}
+
+.footer-list li {
+    cursor: pointer;
+}
