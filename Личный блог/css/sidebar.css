@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto-blog;
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+button, li {
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+button:hover, li:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+
+
+.sidebar {
+    display: block;
+    max-width: 15.625vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-shadow: 5px 0px 15px 0px rgba(5, 5, 5, 0.1);
+    background: rgb(32, 32, 32);
+    text-align: center;
+}
+
+.sidebar-content {
+    position: relative;
+}
+
+.sidebar-back__photo {
+    background-image: url(../img/Rectangle\ 1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15.625vw;
+    height: 19.625vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+}
+
+.div-test {
+    height: 39.25vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-avatar__photo {
+    background-image: url(../img/Ellipse\ 1.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 6.2vw;
+    height: 6.2vw;
+}
+
+.div-test2 {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15.625vw;
+    
+}
+
+.sidebar-text {
+    margin-top: 20vh;
+}
+
+.sidebar-content {
+    position: relative;
+}
+
+.sidebar-text__name {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.sidebar-text__description {
+    color: rgb(222, 222, 222);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0%;
+}
+
+.sidebar-text__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar-description__text {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-buttons button {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+}
+
+.sidebar-buttons a {
+    flex: 1;
+    cursor: pointer;
+}
+
+.sidebar-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.sidebar-buttons__my-projects {
+    background: rgb(237, 48, 36);
+    box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+    white-space: nowrap;
+}
+
+.sidebar-buttons__contact-me {
+    background: rgb(49, 55, 201);
+    box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+    white-space: nowrap;
+}
+
+.sidebar-description {
+    padding: 0 1rem;
+}
+
+.sidebar-description__hr {
+    border: 1px solid rgb(28, 28, 28);
+    width: 100%;
+}
+
+@media (max-width: 1600px) {
+    .sidebar-text__name {
+        font-size: 15px;
+    }
+
+    .sidebar-text__description {
+        font-size: 13px;
+    }
+
+
+
+@media (max-width: 1390px) {
+    .sidebar-buttons__my-projects {
+        white-space: normal;
+    }
+
+
+
+    .sidebar-buttons__contact-me {
+        white-space: normal;
+    }
+}}
+
+@media (max-width: 1700px) {
+    .sidebar-buttons button {
+        padding: 0.5rem;
+    }
+}
