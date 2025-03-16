@@ -27,6 +27,10 @@ button:hover, li:hover {
     transform: scale(1.1);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 
 
 .sidebar {
@@ -61,6 +65,10 @@ button:hover, li:hover {
     height: 39.25vh;
     display: flex;
     justify-content: center;
+}
+
+.papa-list {
+    display: none;
 }
 
 .sidebar-avatar__photo {
@@ -145,10 +153,6 @@ button:hover, li:hover {
     flex: 1;
 }
 
-.sidebar-buttons a {
-    flex: 1;
-    cursor: pointer;
-}
 
 .sidebar-buttons {
     margin-top: 1rem;
@@ -156,6 +160,7 @@ button:hover, li:hover {
     justify-content: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    gap: 1rem;
 
 }
 
@@ -207,4 +212,196 @@ button:hover, li:hover {
     .sidebar-buttons button {
         padding: 0.5rem;
     }
+}
+
+@media (max-width: 1024px) {
+
+    .nav-input {
+        display: flex;
+    }
+
+    .post-footer-cont__text {
+        display: block;
+    }
+
+    .post-footer-container-text {
+        margin-bottom: 0.5rem;
+    }
+
+    .post-footer-text-cont {
+        display: block;
+    }
+
+    .burger {
+        display: flex;
+
+    }
+
+    .sidebar{
+        
+        display: none;
+        position: fixed;
+        max-height: 100vh;
+        max-width: 100vw;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        z-index: 50;
+        animation: burgerAnimation 0.4s;
+        padding-top: 50px;
+    }
+
+    .sidebar-back__photo  {
+        
+        width: 100vw;
+
+    }
+    
+
+    .sidebar-avatar__photo {
+        width: 30vw;
+        height: 30vw;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+
+    .sidebar-description {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+   
+    .sidebar-text__list {
+        display: none;
+    }
+
+    .div-test2 {
+        width: 100vw;
+        position: relative;
+    }
+
+    .sidebar-buttons button {
+        font-size: 17px;
+        flex: 1;
+       
+    }
+
+    .sidebar-buttons {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+
+    .sidebar-text__name {
+        font-size: 25px;
+    }
+
+    .sidebar-text__description {
+        font-size: 22px;
+    }
+
+    .sidebar-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #dl_list {
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+    .sidebar-item {
+        text-align: left;
+    }
+
+    .papa-list {
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .sidebar-link {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .main-nav {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 1rem;
+    }
+
+    
+    
+
+    .main-content {
+        width: 100vw;
+    }
+
+
+    .navs-cont {
+        display: flex;
+        justify-content: center;
+        width: 100;
+    }
+
+    .main-inp {
+        display: none;
+    }
+
+    .post-img {
+        width: 90vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-post {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .post-content {
+        width: 90vw;
+    }
+
+    .main-text-cont {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .post-description {
+        display: block;
+    }
+
+    .post-link {
+        margin-top: 1rem;
+        text-align: left;
+    }
+}
+
+
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
 }
