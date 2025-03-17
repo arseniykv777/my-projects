@@ -62,9 +62,6 @@
     display: block;
 }
 
-body {
-    overflow-y: hidden;
-}
 
 .post-span {
     width: 6px;
@@ -73,10 +70,9 @@ body {
     border-radius: 50%;
 }
 
-main {
-    height: 100vh;
+body {
+    overflow: hidden;
 }
-
 
 .main-container {
     padding-bottom: 0;
@@ -85,7 +81,6 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    height: 100%;
 }
 
 .main-post {
@@ -98,6 +93,18 @@ main {
     flex-direction: column;
     row-gap: 1.5rem;
 
+}
+
+.window {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
 }
 
 @media (max-width: 1024px) {
@@ -116,12 +123,20 @@ main {
         line-height: 18px;
     }
 
-    .window {
-        overflow: auto;
+    main {
+        height: 100%;
     }
 
 
+}
 
 
 
+
+
+@media (max-height: 905px) {
+    body {
+        overflow: auto;
+        height: max-content;
+    }
 }
