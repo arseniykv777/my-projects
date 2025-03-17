@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/profile.css">
     <script src="js/burger.js" defer></script>
+    <script src="js/file-input.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -77,7 +78,7 @@
             <div class="header-nav">
                 <nav class="nav">
                     <ul>
-                        <li class="nav-item"><a href="home.html" class="nav-link">ГЛАВНАЯ</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">ГЛАВНАЯ</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">ОБО МНЕ</a></li>
                         <li class="nav-item"><a href="profile.html" class="nav-link">ПРОФИЛЬ</a></li>
                     </ul>
@@ -107,12 +108,12 @@
 
                     <div class="main-avatar_cont">
                         <div class="main-avatar_photo">
-                            <img src="img/avatar.jpg" alt="avatar" class="main-avatar__img">
+                            <img src="img/avatar.jpg" alt="avatar" class="main-avatar__img" id="image">
                         </div>
 
                         <label for="file__input" class="custom-file__input">
                             выбрать аватар
-                            <input type="file" class="main-avatar__input" id="file__input">
+                            <input type="file" class="main-avatar__input" id="file__input" accept=".jpg, .jpeg, .png, .gif">
                         </label>
                     </div>
                 </div>
