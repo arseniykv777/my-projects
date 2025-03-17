@@ -1,0 +1,110 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0.7rem;
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.add_scroll {
+    overflow: auto;
+}
+
+
+.modal-footers {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);  
+    gap: 5rem;
+    overflow: hidden;
+}
+
+
+.modal-photo {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1023px) {
+    .modal-content {
+        width: 50vw;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 10vw;
+    }
+
+    .close {
+        font-size: 35px;
+    }
+
+    .modal-footers {
+        left: 1rem;
+        right: 1rem;
+        transform: translate(0);
+        overflow: hidden;
+        gap: 1rem;
+    }
+
+    .modal-photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-footers img {
+        width: 100%;
+    }
+}
