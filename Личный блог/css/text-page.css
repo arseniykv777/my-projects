@@ -22,7 +22,7 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -56,7 +56,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
@@ -73,7 +73,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
@@ -104,7 +104,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
@@ -114,7 +114,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
@@ -142,7 +142,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
@@ -152,7 +152,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
     width: 100%;
     background-color: transparent;
@@ -170,7 +170,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
     border-radius: 5px;
     box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
@@ -203,7 +203,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
@@ -213,7 +213,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
     margin-top: 0.7rem;
     margin-bottom: 0.1rem;
@@ -225,7 +225,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: 0%;
+letter-spacing: 0;
     text-align: left;
 }
 
