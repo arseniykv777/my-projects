@@ -8,13 +8,16 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Roboto-blog;
-    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
-}
 
 a {
     text-decoration: none;
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
 }
 
 button, li {
@@ -22,16 +25,58 @@ button, li {
     cursor: pointer;
 }
 
+.window {
+    width: 100%;
+    display: block;
+}
+
+.header-nav {
+    box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(13, 13, 13);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
 button:hover, li:hover {
     opacity: 0.7;
     transform: scale(1.1);
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+body {
+    display: flex;
 }
 
 body.no-scroll {
     overflow: hidden;
 }
 
-
+.open {
+    display: flex !important;
+}
 
 .sidebar {
     display: block;
@@ -48,7 +93,7 @@ body.no-scroll {
 }
 
 .sidebar-back__photo {
-    background-image: url(../img/Rectangle\ 1.jpeg);
+    background-image: url(../img/Rectangle-1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,7 +117,7 @@ body.no-scroll {
 }
 
 .sidebar-avatar__photo {
-    background-image: url(../img/Ellipse\ 1.svg);
+    background-image: url(../img/Ellipse-1.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -185,6 +230,81 @@ body.no-scroll {
     width: 100%;
 }
 
+.nav-input {
+    margin-left: auto;
+    display: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    box-shadow: -7px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(32, 32, 32);
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+    margin-right: auto;
+}
+
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span { transform: scale(0) }
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+main {
+    background-color: rgb(25, 25, 25);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 1700px) {
+    .sidebar-buttons button {
+        padding: 0.5rem;
+    }
+}
+
 @media (max-width: 1600px) {
     .sidebar-text__name {
         font-size: 15px;
@@ -194,6 +314,7 @@ body.no-scroll {
         font-size: 13px;
     }
 
+    
 
 
 @media (max-width: 1390px) {
@@ -208,33 +329,23 @@ body.no-scroll {
     }
 }}
 
-@media (max-width: 1700px) {
-    .sidebar-buttons button {
-        padding: 0.5rem;
+
+@media (max-width: 1250px) {
+    .sidebar-description {
+        display: none;
+    }
+
+    .sidebar-buttons {
+        flex-direction: column;
+        row-gap: 1rem;
     }
 }
 
 @media (max-width: 1024px) {
 
-    .nav-input {
-        display: flex;
-    }
-
-    .post-footer-cont__text {
-        display: block;
-    }
-
-    .post-footer-container-text {
-        margin-bottom: 0.5rem;
-    }
-
-    .post-footer-text-cont {
-        display: block;
-    }
 
     .burger {
         display: flex;
-
     }
 
     .sidebar{
@@ -248,7 +359,7 @@ body.no-scroll {
         inset: 0;
         z-index: 50;
         animation: burgerAnimation 0.4s;
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     .sidebar-back__photo  {
@@ -257,16 +368,12 @@ body.no-scroll {
 
     }
     
-
     .sidebar-avatar__photo {
         width: 30vw;
         height: 30vw;
         top: 50%;
         transform: translate(-50%, -50%);
     }
-
-
-
 
     .sidebar-description {
         display: none;
@@ -341,62 +448,13 @@ body.no-scroll {
         text-align: left;
     }
 
-    .main-nav {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0 1rem;
-    }
-
-    
-    
-
-    .main-content {
-        width: 100vw;
-    }
-
-
-    .navs-cont {
-        display: flex;
-        justify-content: center;
-        width: 100;
-    }
-
-    .main-inp {
-        display: none;
-    }
-
-    .post-img {
-        width: 90vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .main-post {
+        
         width: 95vw;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .post-content {
-        width: 90vw;
-    }
-
-    .main-text-cont {
-        width: 95vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-
-    .post-description {
-        display: block;
-    }
-
-    .post-link {
-        margin-top: 1rem;
-        text-align: left;
-    }
 }
 
 

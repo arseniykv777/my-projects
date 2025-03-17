@@ -1,76 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: Roboto-blog;
-    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
-}
-
-.open {
-    display: flex !important;
-}
-
-body {
-    display: flex;
-}
-
-a {
-    transition: opacity 0.3s, transform 0.3s;
-    cursor: pointer;
-}
-
-a:hover {
-    opacity: 0.7;
-    transform: scale(1.1);
-}
-
-.window {
-    width: 100%;
-    display: block;
-}
-
-.header-nav {
-    box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(13, 13, 13);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.nav {
-    display: flex;
-}
-
-.nav ul {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-link {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 13px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-main {
-    background-color: rgb(25, 25, 25);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
 
 .main-post {
     padding: 1rem;
@@ -219,7 +147,7 @@ main {
 }
 
 .post-footer-form__input {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 400;
@@ -230,6 +158,7 @@ main {
     background-color: transparent;
     outline: none;
     border: none;
+    padding-bottom: 5px;
     border-bottom: 1px solid ;
     margin-top: 0.5rem;
 }
@@ -305,81 +234,15 @@ main {
     margin-left: 5%;
 }
 
-.burger{
-    display: none;
-    position: relative;
-    z-index: 50;
-    align-items: center;
-    justify-content: flex-end;
-    width: 30px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.burger span{
-    height: 2px;
-    width: 80%;
-    transform: scale(1);
-    background-color: #FAF6F2;
-    margin-right: auto;
-}
 
 
-.burger::before, .burger::after{
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #FAF6F2;
-    transition: all 0.3s ease 0s;
-}
 
-.burger::before { top: 0 }
-
-.burger::after { bottom: 0 }
-
-/* Добавляем класс active для анимации иконки бургера */
-.burger.active span { transform: scale(0) }
-
-.burger.active::before{
-    top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
-}
-
-.burger.active::after{
-    bottom: 50%;
-    transform: rotate(45deg) translate(0, 50%);
-}
-
-.nav-input {
-    margin-left: auto;
-    display: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-align: left;
-    box-shadow: -7px 1px 10px 0px rgba(0, 0, 0, 0.3);
-    background: rgb(32, 32, 32);
-    border: none;
-    padding: 0.5rem;
-    outline: none;
-}
-
-@media (max-width: 1200px) {
-    .sidebar-description {
-        display: none;
-    }
-
-    .sidebar-buttons {
-        flex-direction: column;
-        row-gap: 1rem;
-    }
-}
 
 @media (max-width: 1024px) {
+
+    .burger {
+        display: flex;
+    }
 
     .nav-input {
         display: flex;
@@ -397,144 +260,6 @@ main {
         display: block;
     }
 
-    .burger {
-        display: flex;
-
-    }
-
-    .sidebar{
-        
-        display: none;
-        position: fixed;
-        max-height: 100vh;
-        max-width: 100vw;
-        width: 100%;
-        height: 100%;
-        inset: 0;
-        z-index: 50;
-        animation: burgerAnimation 0.4s;
-        padding-top: 50px;
-    }
-
-    .sidebar-back__photo  {
-        
-        width: 100vw;
-
-    }
-    
-
-    .sidebar-avatar__photo {
-        width: 30vw;
-        height: 30vw;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-
-
-    .sidebar-description {
-        display: none;
-    }
-
-    .nav {
-        display: none;
-    }
-   
-    .sidebar-text__list {
-        display: none;
-    }
-
-    .div-test2 {
-        width: 100vw;
-        position: relative;
-    }
-
-    .sidebar-buttons button {
-        font-size: 17px;
-        flex: 1;
-       
-    }
-
-    .sidebar-buttons {
-        margin-top: 1.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-
-    .sidebar-text__name {
-        font-size: 25px;
-    }
-
-    .sidebar-text__description {
-        font-size: 22px;
-    }
-
-    .sidebar-list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    #dl_list {
-        margin-left: 5vw;
-        display: flex;
-        flex-direction: column;
-        gap: 0.1rem;
-    }
-    .sidebar-item {
-        text-align: left;
-    }
-
-    .papa-list {
-        display: flex;
-        margin-left: 1rem;
-    }
-
-    .sidebar-link {
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 32px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-
-    .main-nav {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0 1rem;
-    }
-
-    
-    
-
-    .main-content {
-        width: 100vw;
-    }
-
-
-    .navs-cont {
-        display: flex;
-        justify-content: center;
-        width: 100;
-    }
-
-    .main-inp {
-        display: none;
-    }
-
-    .post-img {
-        width: 90vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .main-post {
         
         width: 95vw;
@@ -542,31 +267,10 @@ main {
         margin-right: auto;
     }
 
-    .post-content {
-        width: 90vw;
-    }
-
-    .main-text-cont {
-        width: 95vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-
-    .post-description {
-        display: block;
-    }
-
-    .post-link {
-        margin-top: 1rem;
-        text-align: left;
+    .nav {
+        display: none;
     }
 }
 
 
 
-@keyframes burgerAnimation {
-    from {opacity: 0}
-    to {opacity: 1}
-}

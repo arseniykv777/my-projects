@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/home.css">
@@ -26,13 +26,13 @@
                     </div>
 
                     <div class="sidebar-text">
-                        <p class="sidebar-text__name">Ролан Закиров</p>
+                        <p class="sidebar-text__name" onclick="window.location.href='home.html';">Ролан Закиров</p>
                         <p class="sidebar-text__description">Front-end разработчик</p>
 
                         <ul class="sidebar-text__list">
-                            <li class="sidebar-text-list__item"><a href="#"><img src="img/instagram (1) 1.svg"
+                            <li class="sidebar-text-list__item"><a href="#"><img src="img/instagram-1.svg"
                                         alt="instagram"></a></li>
-                            <li class="sidebar-text-list__item"><a href="#"><img src="img/vk 1.svg" alt="vk"></a></li>
+                            <li class="sidebar-text-list__item"><a href="#"><img src="img/vk-1.svg" alt="vk"></a></li>
                         </ul>
                     </div>
 
@@ -53,12 +53,13 @@
 
             <div class="papa-list">
                 <ul class="sidebar-list">
-                    <li class="sidebar-item"><a href="#" class="sidebar-link">Статьи</a></li>
+                    <li class="sidebar-item"><a href="#" class="sidebar-link">Статьи</a>
                         <ul class="sidebar-list" id="dl_list">
                             <li class="sidebar-item"><a href="#" class="sidebar-link">Создание сайтов</a></li>
                             <li class="sidebar-item"><a href="#" class="sidebar-link">Интернет-маркетинг</a></li>
                             <li class="sidebar-item"><a href="#" class="sidebar-link">Продвижение видео</a></li>
                         </ul>
+                    </li>
                     <li class="sidebar-item"><a href="#" class="sidebar-link">Обо мне</a></li>
                     <li class="sidebar-item"><a href="#" class="sidebar-link">Реклама</a></li>
                     <li class="sidebar-item"><a href="#" class="sidebar-link">Профиль</a></li>
@@ -66,7 +67,7 @@
             </div>
 
             <div class="sidebar-buttons">
-                <button class="sidebar-buttons__my-projects">Мои работы</button>
+                <button class="sidebar-buttons__my-projects" onclick="window.location.href='my-projects.html';">Мои работы</button>
                 <button class="sidebar-buttons__contact-me">Написать мне</button>
             </div>
 
@@ -103,8 +104,8 @@
 
                 <div class="main-inp">
                     <input type="text" class="main-inp__input" placeholder="Напишите что-нибудь">
-                    <a href="#"><img src="img/photo btn.png" alt="" style="margin-right: 0.5rem;"></a>
-                    <a href="#"><img src="img/send btn.png" alt=""></a>
+                    <a href="#"><img src="img/photo-btn.png" alt="" style="margin-right: 0.5rem;"></a>
+                    <a href="#"><img src="img/send-btn.png" alt=""></a>
                 </div>
 
                 <div class="main-text-cont">
@@ -124,8 +125,8 @@
 
                         <div class="post-content">
                             <div class="post-photo">
-                                <img src="img/Rectangle 5.png" alt="" style="display: block;" class="post-img">
-                                <img src="img/play 1.png" alt="" class="play-btn">
+                                <img src="img/Rectangle-5.png" alt="" style="display: block;" class="post-img">
+                                <img src="img/play-1.png" alt="" class="play-btn">
                             </div>
 
                             <h2 class="post-title">Купил новый ноутбук за 150 000 руб</h2>
@@ -147,7 +148,7 @@
 
                         <div class="post-content">
                             <div class="post-photo" style="margin: auto;">
-                                <img src="img/Rectangle 3.jpeg" alt="" style="display: block; border-radius: 5px;" class="post-img">
+                                <img src="img/Rectangle-3.jpeg" alt="" style="display: block; border-radius: 5px;" class="post-img">
                             </div>
 
                             <h2 class="post-title">Как я сходил на FrontEnd Conf 2021</h2>
@@ -181,11 +182,11 @@
         <footer>
             <div class="footer-cont">
                 <ul class="footer-list">
-                    <li class="footer-item"><a href="#" class="footer-link"><</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">&lt;</a></li>
                     <li class="footer-item"><a href="#" class="footer-link">1</a></li>
                     <li class="footer-item" id="footer-page"><a href="#" class="footer-link">2</a></li>
                     <li class="footer-item"><a href="#" class="footer-link">3</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">></a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">&gt;</a></li>
                 </ul>
             </div>
         </footer>
