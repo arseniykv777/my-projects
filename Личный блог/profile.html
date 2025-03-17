@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои проекты</title>
+    <title>Профиль</title>
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/my-projects.css">
+    <link rel="stylesheet" href="css/profile.css">
     <script src="js/burger.js" defer></script>
 </head>
-
 <body>
     <div class="sidebar">
 
@@ -94,67 +92,33 @@
         </header>
 
         <main>
+            <div class="main-content">
+                <h1 class="main-title">Профиль</h1>
+                
+                <div class="main-form_cont">
+                    <form action="#">
+                        <input type="text" value="Арсений Кириллов">
+                        <input type="text" value="senya_og@vk.com">
+                        <input type="password" placeholder="Новый пароль">
+                        <input type="password" placeholder="Подтвердите пароль">
 
-            <div class="main-posts">
+                        <button type="submit">Сохранить</button>
+                    </form>
 
-                <h2 class="main-title">Мои работы</h2>
+                    <div class="main-avatar_cont">
+                        <div class="main-avatar_photo">
+                            <img src="img/avatar.jpg" alt="avatar" class="main-avatar__img">
+                        </div>
 
-                <div class="main-post">
-
-                    <div class="post-photo">
-                        <img src="img/Rectangle-21.jpeg" alt="recntalge" class="post-img">
+                        <label for="file__input" class="custom-file__input">
+                            выбрать аватар
+                            <input type="file" class="main-avatar__input" id="file__input">
+                        </label>
                     </div>
-
-                    <div class="post-info">
-
-                        <h3 class="post-title">altermono.com</h3>
-
-                        <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat
-                            orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor
-                            in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
-                            volutpat massa. Egestas ornare vel volutpat.</p>
-
-                        <ul class="post-list">
-                            <li class="post-item">дизайн</li>
-                            <li class="post-item">создание сайта</li>
-                            <li class="post-item">SMM</li>
-                        </ul>
-
-                        <a href="#" class="post-link">Перейти на сайт</a>
-
-                    </div>
-
-                </div>
-
-                <div class="main-post">
-
-                    <div class="post-photo">
-                        <img src="img/Rectangle-221.jpeg" alt="recntalge" class="post-img">
-                    </div>
-
-                    <div class="post-info">
-
-                        <h3 class="post-title">codedoco.com</h3>
-
-                        <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat
-                            orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor
-                            in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
-                            volutpat massa. Egestas ornare vel volutpat.</p>
-
-                        <ul class="post-list">
-                            <li class="post-item">дизайн</li>
-                            <li class="post-item">создание сайта</li>
-                            <li class="post-item">SMM</li>
-                        </ul>
-
-                        <a href="#" class="post-link">Перейти на сайт</a>
-
-                    </div>
-
                 </div>
             </div>
         </main>
+
     </div>
 </body>
-
 </html>

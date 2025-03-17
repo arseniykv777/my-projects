@@ -1,0 +1,117 @@
+.main-title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0;
+
+}
+
+body {
+    overflow-y: hidden;
+}
+
+form input {
+    border: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    outline: none;
+    border-bottom: 2px solid rgb(63, 63, 63);;
+    transition: border-bottom 0.3s ease-in-out;
+    display: block;
+    padding-bottom: 5px;
+    width: 30vw;
+
+}
+
+form input:focus {
+    border-bottom: 1px solid rgb(16, 126, 255);
+}
+
+form button {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    width: max-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    background: rgb(49, 55, 201);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.main-form_cont {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+
+}
+
+
+
+.main-avatar__img {
+    width: 150px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.main-avatar__input {
+    display: none;
+}
+
+.custom-file__input {
+    margin-top: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Montserrat;
+    color: rgb(16, 126, 255);
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(16, 126, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+.main-content {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    form input {
+        text-overflow: ellipsis;
+    }
+
+
+    .main-avatar__img {
+        height: 160px;
+        width: 110px;
+    }
+
+    
+}
