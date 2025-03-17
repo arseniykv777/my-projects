@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Профиль</title>
+    <title>Вход</title>
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/entry.css">
     <script src="js/burger.js" defer></script>
-    <script src="js/file-input.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -94,35 +93,27 @@
 
         <main>
             <div class="main-content">
-                <h1 class="main-title">Профиль</h1>
+                <h1 class="main-title">Вход</h1>
                 
                 <div class="main-form_cont">
                     <form action="#">
-                        <input type="text" value="Арсений Кириллов">
-                        <input type="text" value="senya_og@vk.com">
-                        <input type="password" placeholder="Новый пароль">
-                        <input type="password" placeholder="Подтвердите пароль">
-
+                        <div class="form_inputs">
+                            <input type="email" name="" id="" placeholder="Почта" required>
+                            <input type="password" name="" id="" placeholder="Пароль" required>
+                        </div>
                         <div class="form-footer">
-                            <button type="submit">Сохранить</button>
-                            <a class="form_registr" href="entry.html">Вход в другой аккаунт</a>
+                            <button type="submit">Войти</button>
                         </div>
                     </form>
 
-                    <div class="main-avatar_cont">
-                        <div class="main-avatar_photo">
-                            <img src="img/avatar.jpg" alt="avatar" class="main-avatar__img" id="image">
-                        </div>
-
-                        <label for="file__input" class="custom-file__input">
-                            выбрать аватар
-                            <input type="file" class="main-avatar__input" id="file__input" accept=".jpg, .jpeg, .png, .gif">
-                        </label>
+                    <div class="main-form_cont-cont">
+                        <a href="#">восстановить</a>
+                        <a href="#">регистрация</a>
                     </div>
+
                 </div>
             </div>
         </main>
-
     </div>
 </body>
 </html>
