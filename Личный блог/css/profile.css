@@ -70,9 +70,9 @@ form {
 }
 
 .form_registr {
-    color: rgb(49, 55, 201);
+    color: rgb(83, 150, 190);
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
@@ -115,6 +115,12 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .nav-input {
+        display: flex;
+    }
 }
 
 

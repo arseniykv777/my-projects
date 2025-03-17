@@ -61,7 +61,7 @@ letter-spacing: 0;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-letter-spacing: 0;
+    letter-spacing: 0;
     text-align: left;
 }
 
@@ -162,7 +162,7 @@ letter-spacing: 0;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-letter-spacing: 0;
+    letter-spacing: 0;
     text-align: left;
 }
 
@@ -227,6 +227,10 @@ letter-spacing: 0;
 
     .nav{
         display: none;
+    }
+
+    .nav-input {
+        display: flex;
     }
 
     .main-nav {
