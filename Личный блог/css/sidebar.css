@@ -154,6 +154,7 @@ body.no-scroll {
     font-weight: 400;
     letter-spacing: 0;
     text-align: center;
+    cursor: pointer;
 }
 
 .sidebar-text__description {
