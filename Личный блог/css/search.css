@@ -41,6 +41,14 @@
     gap: 0.5rem;
 }
 
+
+
+html {
+    height: max-content;
+}
+
+
+
 .post-date {
     color: rgb(130, 130, 130);
     font-family: Montserrat;
@@ -70,9 +78,7 @@
     border-radius: 50%;
 }
 
-body {
-    overflow: hidden;
-}
+
 
 .main-container {
     padding-bottom: 0;
@@ -95,17 +101,13 @@ body {
 
 }
 
-.window {
-    height: 100%;
+@media (min-height: 856px) {
+    html {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
-main {
-    height: 100%;
-}
-
-body {
-    height: 100vh;
-}
 
 @media (max-width: 1024px) {
     .main-container {
@@ -122,21 +124,11 @@ body {
         font-size: 16px;
         line-height: 18px;
     }
-
-    main {
-        height: 100%;
-    }
-
-
 }
 
-
-
-
-
-@media (max-height: 905px) {
-    body {
+@media (max-width: 786px) {
+    html {
         overflow: auto;
-        height: max-content;
     }
 }
+

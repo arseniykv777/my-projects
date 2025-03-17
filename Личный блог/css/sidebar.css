@@ -65,9 +65,14 @@ button:hover, li:hover {
     text-transform: uppercase;
 }
 
+html {
+    height: max-content;
+}
 
 body {
     display: flex;
+    background: rgb(24, 24, 24);
+    height: 100%;
 }
 
 body.no-scroll {
@@ -295,7 +300,6 @@ body.no-scroll {
 }
 
 main {
-    background-color: rgb(25, 25, 25);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
