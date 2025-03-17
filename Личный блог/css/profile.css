@@ -103,6 +103,7 @@ form {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0;
+    width: max-content;
 }
 
 main {
@@ -129,5 +130,13 @@ main {
         width: 110px;
     }
 
+    .main-content {
+
+        margin-right: 10vw;
+    }
+
+    .main-form_cont {
+        gap: 0;
+    }
     
 }
