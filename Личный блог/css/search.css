@@ -124,6 +124,10 @@ html {
         font-size: 16px;
         line-height: 18px;
     }
+
+    .nav-input {
+        display: flex;
+    }
 }
 
 @media (max-width: 786px) {
