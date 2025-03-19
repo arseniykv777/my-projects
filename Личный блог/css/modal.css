@@ -44,13 +44,6 @@
     cursor: pointer;
 }
 
-.no-scroll {
-    overflow: hidden;
-}
-
-.add_scroll {
-    overflow: auto;
-}
 
 
 .modal-photo {

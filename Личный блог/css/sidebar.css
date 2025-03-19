@@ -299,6 +299,15 @@ body.no-scroll {
     transform: rotate(45deg) translate(0, 50%);
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
+.add_scroll {
+    overflow: auto;
+}
+
+
 main {
     padding-top: 2rem;
     padding-bottom: 2rem;
