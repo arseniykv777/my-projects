@@ -7,11 +7,34 @@
     <title>Мои проекты</title>
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/my-projects.css">
+    <link rel="stylesheet" href="css/modal2.css">
     <script src="js/burger.js" defer></script>
     <script src="js/search.js" defer></script>
+    <script src="js/modals.js" defer></script>
 </head>
 
 <body>
+    <div class="modal2" id="myModal2">
+        <div class="modal-content2">
+            <span class="close2">&times</span>
+
+            <div class="modal-main-content2">
+                <form action="#">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш e-mail">
+                    <input type="text" placeholder="Текст сообщения">
+
+                    <button type="submit">Отправить</button>
+                </form>
+
+                <div class="modal-main-content2-footer">
+                    <p>e-mail: <span>info@mywebsite.ru</span></p>
+                    <p>тел: <span>+943-232-856-22</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="sidebar">
 
@@ -70,7 +93,7 @@
 
             <div class="sidebar-buttons">
                 <button class="sidebar-buttons__my-projects" onclick="window.location.href='my-projects.html';">Мои работы</button>
-                <button class="sidebar-buttons__contact-me">Написать мне</button>
+                <button class="sidebar-buttons__contact-me" id="modal-btn2">Написать мне</button>
             </div>
 
         </div>
