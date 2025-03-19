@@ -1,16 +1,18 @@
 var modal = document.getElementById('myModal');
-var btn = document.getElementById('modal-btn');
+var btns = document.querySelectorAll('.modal-btn')
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-    modal.style.display = "block";
-    document.body.classList.remove('add_scroll');
-    document.body.classList.add('no-scroll');
-    modal.classList.remove('show');
-    setTimeout(() => {
-        modal.classList.add('show')
-    }, 10)
-}
+btns.forEach(btn => {
+    btn.onclick = function () {
+        modal.style.display = "block";
+        document.body.classList.remove('add_scroll');
+        document.body.classList.add('no-scroll');
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.classList.add('show')
+        }, 10)
+    }
+})
 
 span.onclick = function () {
     document.body.classList.remove('no-scroll');

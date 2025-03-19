@@ -34,12 +34,11 @@
 }
 
 .close {
+    margin: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 0.7rem;
     color: #000;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -51,20 +50,6 @@
 
 .add_scroll {
     overflow: auto;
-}
-
-
-.modal-footers {
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%);  
-    gap: 5rem;
-    overflow: hidden;
 }
 
 
@@ -81,30 +66,19 @@
 
 @media (max-width: 1023px) {
     .modal-content {
-        width: 50vw;
+        width: 40vw;
         margin: 0 auto;
         height: auto;
         margin-top: 10vw;
     }
 
     .close {
-        font-size: 35px;
+        font-size: 1.5rem;
     }
 
-    .modal-footers {
-        left: 1rem;
-        right: 1rem;
-        transform: translate(0);
-        overflow: hidden;
-        gap: 1rem;
-    }
 
     .modal-photo img {
         width: 100%;
         height: auto;
-    }
-
-    .modal-footers img {
-        width: 100%;
     }
 }
