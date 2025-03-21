@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a, li {
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+li:hover, a:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    list-style: none;
+}
+
+.header-nav {
+    display: flex;
+    position: relative;
+}
+
+header {
+    border-radius: 50px;
+    background: rgb(242, 242, 242);
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: max-content;
+    padding-bottom: 2rem;
+}
+
+.fitness{
+    color: rgb(100, 100, 100);
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-nav__list {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 2rem;
+}
+
+.header-nav__list__link {
+    color: rgb(156, 156, 156);
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-cont {
+    background-image: url(img/back1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 919px;
+    width: 1335px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    padding: 1rem 2rem;
+
+}
+
+.header-cont__h2 {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 140px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-cont__p {
+    color: rgb(197, 197, 197);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header-cont__writing-text {
+    color: rgba(255, 255, 255, 0.23);
+    font-family: Lato;
+    font-size: 450px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: left;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.header-cont-normal {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+
+.main-cont__info {
+    text-align: center;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.main-cont__info__title {
+    color: rgb(43, 43, 43);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0%;
+}
+
+.main-cont__info__text {
+    color: rgb(40, 40, 40);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.main-cont__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.main-content {
+    display: flex;
+    border-radius: 50px;
+    background: rgb(242, 242, 242);
+    width: 1335px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.main-content-container p {
+    color: rgb(40, 40, 40);
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-container {
+    padding-left: 2rem;
+    width: 50%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.main-content-container__photo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -50%;
+}
+
+.main-content__photo {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+}
+
+.main-mans {
+    border-radius: 50px;
+    background: rgb(49, 49, 49);
+    width: 1335px;
+    margin: 2rem auto;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-mans-title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0%;
+}
+
+.main-mans-text {
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0%;
+}
+
+.main-sport {
+    background-image: url(img/back2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1335px;
+    height: 919px;
+    margin: auto;
+}
+
+.main-sport__title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+
+    letter-spacing: 0%;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.main-sport-cont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 50%;
+
+}
+
+.main-sport {
+    position: relative;
+}
+
+.main-sport-link {
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    width: max-content;
+    color: rgb(43, 43, 43);
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+
+.main-sport__text {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0%;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1rem;
+}
+
+.main-cards {
+    display: flex;
+    width: 1335px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    width: max-content;
+    border-radius: 50px;
+    background: rgb(243, 241, 246);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.card-text {
+    color: rgb(43, 43, 43);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.card-name {
+    color: rgb(43, 43, 43);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+footer {
+    width: 1335px;
+    border-radius: 50px;
+    background: rgb(255, 172, 165);
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-text {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+}
